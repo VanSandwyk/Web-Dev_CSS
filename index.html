@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home | Recipes</title>
+  </head>
+  <body style="padding: 0; margin: 0">
+    <nav
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        padding: 20px 40px;
+        box-sizing: border-box;
+      "
+    >
+      <img src="images/logo.png" alt="logo" width="100" height="50" />
+      <ul style="padding: 0; margin: 0">
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="index.html" style="text-decoration: none; color: white"
+            >Home</a
+          >
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="about.html" style="text-decoration: none; color: white" >About</a>
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="recipes.html" style="text-decoration: none; color: white"">Recipes</a>
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="contact.html" style="text-decoration: none; color: white"">Contact</a>
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="signIn.html" style="text-decoration: none; color: white"">Sign In</a>
+        </li>
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="register.html" style="text-decoration: none; color: white; background: #14213d; padding: 10px 20px; border-radius: 20px;">Register</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Implemented backgorund image to enhance the style-->
+    <header
+      style="
+        text-align: center;
+        padding: 14%;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.2)
+        ),
+        /* bottom, image */
+        url('img/avocado.jpg');
+        color: white;
+      "
+    >
+      <h1 style="font-size: 4rem; margin: 0;">Welcome to <span style="color: #F5F749">Recipe Hub</span></h1>
+      <p style="font-size: 1.5rem">Discover, cook, and share delicious recipes with the world!<br/></p>
+      <a
+        href="recipes.html"
+        title="Explore our collection of recipes"
+        style="
+          padding: 20px 40px;
+          display: inline-block;
+          background-color: #ffd60a;
+          border-radius: 40px;
+          text-decoration: none;
+          font-weight: bold;
+        "
+        >Explore Recipes</a
+      >
+    </header>
+
+    <main>
+      <section>
+        <h2>Latest Recipes</h2>
+        <ul>
+          <li><a href="recipes/chocolate_cake.html">Chocolate Cake</a></li>
+          <li><a href="recipes/pasta_alfredo.html">Pasta Alfredo</a></li>
+          <li><a href="recipes/beef_stew.html">Beef Stew</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Join Our Newsletter</h2>
+        <form action="subscribe.html" method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="frequency">Frequency:</label>
+          <select id="frequency" name="frequency">
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option></select
+          ><br /><br />
+
+          <input type="submit" value="Subscribe" />
+        </form>
+      </section>
+    </main>
+
+    <footer style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 20px 40px; box-sizing: border-box; background-color: #816E94;"">
+      <p>&copy; The OG's 2024. All rights reserved.</p>
+      <address role="contentinfo" style="padding: 0" >
+        Email: <a href="mailto:recipe@gmail.com">recipe@gmail.com</a><br />
+        Phone: <a href="tel:+27451234567">+27 45 123 4567</a>
+      </address>
+    </footer>
+  </body>
+</html>
