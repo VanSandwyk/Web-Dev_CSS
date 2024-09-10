@@ -36,35 +36,44 @@
     </header>
 
     <main>
-      <section>
-        <h2>Get in Touch</h2>
-        <form action="submit_contact.html" method="post">
-          <label
-            >Name:
-            <input type="text" id="name" name="name" required />
-          </label>
+      <section id="contact-sn">
+        <section class="container">
+          <h2>Get in Touch</h2>
+          <form action="submit_contact.html" method="post">
+            <label
+              >Name:
+              <input type="text" id="name" name="name" required />
+            </label>
 
-          <label for="email"
-            >Email:
-            <input type="email" id="email" name="email" required />
-          </label>
+            <label for="email"
+              >Email:
+              <input type="email" id="email" name="email" required />
+            </label>
 
-          <label for="message"
-            >Message:
-            <textarea id="message" name="message" rows="4" cols="50"></textarea>
-          </label>
+            <label for="message"
+              >Message:
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </label>
 
-          <input type="submit" value="Send Message" />
-        </form>
+            <input type="submit" value="Send Message" />
+          </form>
+        </section>
       </section>
     </main>
 
     <footer>
-      <p>&copy; The OG's 2024. All rights reserved.</p>
-      <address role="contentinfo">
-        Email: <a href="mailto:recipe@gmail.com">recipe@gmail.com</a><br />
-        Phone: <a href="tel:+27451234567">+27 45 123 4567</a>
-      </address>
+      <section class="container">
+        <p>&copy; The OG's 2024. All rights reserved.</p>
+        <address role="contentinfo">
+          Email: <a href="mailto:recipe@gmail.com">recipe@gmail.com</a><br />
+          Phone: <a href="tel:+27451234567">+27 45 123 4567</a>
+        </address>
+      </section>
     </footer>
   </body>
 </html>
