@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes | Recipes</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -117,30 +118,36 @@
           method="post"
           enctype="multipart/form-data"
         >
-          <label for="recipe-name">Recipe Name:</label>
-          <input
+          <label for="recipe-name">Recipe Name:  
+            <input
             type="text"
             id="recipe-name"
             name="recipe-name"
             required
-          /><br /><br />
+          />
+        </label>
+         
 
-          <label for="recipe-desc">Recipe Description:</label>
-          <textarea
+          <label for="recipe-desc">Recipe Description:
+            <textarea
             id="recipe-desc"
             name="recipe-desc"
             rows="4"
             cols="50"
           ></textarea
-          ><br /><br />
+          >
+          </label>
+          
 
-          <label for="recipe-file">Upload Recipe Image:</label>
-          <input
+          <label for="recipe-file">Upload Recipe Image:
+            <input
             type="file"
             id="recipe-file"
             name="recipe-file"
             accept="image/*"
-          /><br /><br />
+          />
+          </label>
+          
             <!---->
       </section>
         <figure> <a href="review.html">

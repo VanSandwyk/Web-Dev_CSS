@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Recipes</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -36,6 +37,29 @@
     </header>
 
     <main>
+      <h2>Features</h2>
+      <section id="features">
+        <article>
+          <h3>Discover</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cook</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit.
+          </p>
+        </article>
+
+        <article>
+          <h3>Share</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit.
+          </p>
+        </article>
+      </section>
       <section>
         <h2>Latest Recipes</h2>
         <ul>
@@ -48,15 +72,18 @@
       <section>
         <h2>Join Our Newsletter</h2>
         <form action="subscribe.html" method="post">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="email"
+            >Email: <input type="email" id="email" name="email" required
+          /></label>
 
-          <label for="frequency">Frequency:</label>
-          <select id="frequency" name="frequency">
-            <option value="weekly">Weekly</option>
-            <option value="monthly">Monthly</option>
-            <option value="quarterly">Quarterly</option></select
-          ><br /><br />
+          <label for="frequency"
+            >Frequency:
+            <select id="frequency" name="frequency">
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="quarterly">Quarterly</option>
+            </select>
+          </label>
 
           <input type="submit" value="Subscribe" />
         </form>

@@ -1,1 +1,53 @@
+/* remove default browser padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
 
+/* features section on home page */
+#features {
+  padding: 0;
+  column-count: 3;
+}
+
+#features article {
+  text-align: center;
+}
+
+/* form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+input,
+textarea {
+  width: 60%;
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  padding: 0.5rem 2rem;
+}
+
+textarea {
+  resize: none;
+  min-height: 10rem;
+}
+
+#frequency {
+  padding: 0.5rem 2rem;
+}
+
+/* footer */
+address {
+  float: right;
+}
