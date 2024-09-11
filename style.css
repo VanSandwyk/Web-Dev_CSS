@@ -5,7 +5,8 @@
   margin: 0;
 }
 
-/* Navigation bar on all pages */
+/*--------------------------------------------------------------------------------------------------------------*/
+/* Begin Navbar */
 .navbar {
   width: 100%;
   display: flex;
@@ -17,6 +18,7 @@
   right: 0; /* Align to the right */
   z-index: 1000; /* Ensure it stays above other elements */
   padding: 10px 20px; /* Add padding for a cleaner look */
+  box-sizing: border-box; /*This is to make sure padding is included with width calculations*/
 }
 
 /* List styling */
@@ -62,9 +64,35 @@
   background-color: #f0c050; /* Use a color similar to the underline in the image */
   transform: scaleX(1); /* Expand underline on hover */
 }
-
 /*End of navbar*/
 
+/*--------------------------------------------------------------------------------------------------------------*/
+/* Responsive Design */
+@media (max-width: 992px) {
+  .nav-link {
+    font-size: 14px; /* Slightly smaller text on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .nav-list {
+    gap: 10px; /* Reduce space between items */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 12px; /* Even smaller text on very small screens */
+    padding: 8px 0;
+  }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
 /* container to wrap max width on all content */
 .container {
   max-width: 1100px;
@@ -89,6 +117,7 @@ header span {
   color: #f0c050;
 }
 
+/*--------------------------------------------------------------------------------------------------------------*/
 /* section headers */
 section h2 {
   text-align: center;
