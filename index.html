@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Recipes</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -36,39 +37,82 @@
     </header>
 
     <main>
+      <section id="features">
+        <section class="container">
+          <h2>Features</h2>
+          <article>
+            <hgroup>
+              <h3>Discover</h3>
+              <p>
+                Explore a world of flavors and ingredients through our extensive
+                collection of recipes. Find inspiration for meals, snacks, and
+                desserts from various cuisines and dietary preferences.
+              </p>
+            </hgroup>
+
+            <hgroup>
+              <h3>Cook</h3>
+              <p>
+                Dive into step-by-step guides and cooking tips that make
+                preparing meals easy and enjoyable. Follow simple instructions
+                or experiment with advanced techniques to elevate your cooking
+                skills.
+              </p>
+            </hgroup>
+
+            <hgroup>
+              <h3>Share</h3>
+              <p>
+                Exchange tips, tricks, and personal touches that make each dish
+                unique. Create memories and inspire fellow home cooks by sharing
+                your love for food!
+              </p>
+            </hgroup>
+          </article>
+        </section>
+      </section>
       <section>
-        <h2>Latest Recipes</h2>
-        <ul>
-          <li><a href="recipes/chocolate_cake.html">Chocolate Cake</a></li>
-          <li><a href="recipes/pasta_alfredo.html">Pasta Alfredo</a></li>
-          <li><a href="recipes/beef_stew.html">Beef Stew</a></li>
-        </ul>
+        <section class="container">
+          <h2>Latest Recipes</h2>
+          <ul>
+            <li><a href="recipes/chocolate_cake.html">Chocolate Cake</a></li>
+            <li><a href="recipes/pasta_alfredo.html">Pasta Alfredo</a></li>
+            <li><a href="recipes/beef_stew.html">Beef Stew</a></li>
+          </ul>
+        </section>
       </section>
 
-      <section>
-        <h2>Join Our Newsletter</h2>
-        <form action="subscribe.html" method="post">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
+      <section id="newsletter">
+        <section class="container">
+          <h2>Join Our Newsletter</h2>
+          <form action="subscribe.html" method="post">
+            <label for="email"
+              >Email: <input type="email" id="email" name="email" required
+            /></label>
 
-          <label for="frequency">Frequency:</label>
-          <select id="frequency" name="frequency">
-            <option value="weekly">Weekly</option>
-            <option value="monthly">Monthly</option>
-            <option value="quarterly">Quarterly</option></select
-          ><br /><br />
+            <label for="frequency"
+              >Frequency:
+              <select id="frequency" name="frequency">
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+              </select>
+            </label>
 
-          <input type="submit" value="Subscribe" />
-        </form>
+            <input type="submit" value="Subscribe" />
+          </form>
+        </section>
       </section>
     </main>
 
     <footer>
-      <p>&copy; The OG's 2024. All rights reserved.</p>
-      <address role="contentinfo">
-        Email: <a href="mailto:recipe@gmail.com">recipe@gmail.com</a><br />
-        Phone: <a href="tel:+27451234567">+27 45 123 4567</a>
-      </address>
+      <section class="container">
+        <p>&copy; The OG's 2024. All rights reserved.</p>
+        <address role="contentinfo">
+          Email: <a href="mailto:recipe@gmail.com">recipe@gmail.com</a><br />
+          Phone: <a href="tel:+27451234567">+27 45 123 4567</a>
+        </address>
+      </section>
     </footer>
   </body>
 </html>

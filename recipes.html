@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes | Recipes</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -37,131 +38,147 @@
 
     <main>
       <section>
-        <h2>Popular Recipes</h2>
-        <!-- First table listing popular recipes -->
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Recipe</th>
-              <th>Difficulty</th>
-              <th>Preparation Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="recipes/chocolate_cake.html">Chocolate Cake</a></td>
-              <td>Medium</td>
-              <td>1 hour</td>
-            </tr>
-            <tr>
-              <td><a href="recipes/pasta_alfredo.html">Pasta Alfredo</a></td>
-              <td>Easy</td>
-              <td>30 minutes</td>
-            </tr>
-            <tr>
-              <td><a href="recipes/beef_stew.html">Beef Stew</a></td>
-              <td>Hard</td>
-              <td>2 hours</td>
-            </tr>
-          </tbody>
-        </table>
+        <section class="container">
+          <h2>Popular Recipes</h2>
+          <!-- First table listing popular recipes -->
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Recipe</th>
+                <th>Difficulty</th>
+                <th>Preparation Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="recipes/chocolate_cake.html">Chocolate Cake</a></td>
+                <td>Medium</td>
+                <td>1 hour</td>
+              </tr>
+              <tr>
+                <td><a href="recipes/pasta_alfredo.html">Pasta Alfredo</a></td>
+                <td>Easy</td>
+                <td>30 minutes</td>
+              </tr>
+              <tr>
+                <td><a href="recipes/beef_stew.html">Beef Stew</a></td>
+                <td>Hard</td>
+                <td>2 hours</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
       <section>
+        <section class="container">
         <figure>
             <!--YouTube cooking video link-->
              <h1>Follow our youtube channel for More Food<h1>
             <iframe src="https://www.youtube.com/watch?v=Ndkx1bPNCUM"></iframe>
         </figure>
-        
+      </section>
     </section>
 
       <section>
-        <h2>Recipe Reviews</h2>
-        <!-- Second table displaying reviews of recipes -->
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Recipe</th>
-              <th>Reviewer</th>
-              <th>Rating</th>
-              <th>Comment</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Chocolate Cake</td>
-              <td>Alice</td>
-              <td>5/5</td>
-              <td>Delicious and easy to make!</td>
-            </tr>
-            <tr>
-              <td>Pasta Alfredo</td>
-              <td>Bob</td>
-              <td>4/5</td>
-              <td>Great taste, but a bit too creamy for my liking.</td>
-            </tr>
-            <tr>
-              <td>Beef Stew</td>
-              <td>Charlie</td>
-              <td>5/5</td>
-              <td>Perfect comfort food for a cold day.</td>
-            </tr>
-          </tbody>
-        </table>
+        <section class="container">
+          <h2>Recipe Reviews</h2>
+          <!-- Second table displaying reviews of recipes -->
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Recipe</th>
+                <th>Reviewer</th>
+                <th>Rating</th>
+                <th>Comment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chocolate Cake</td>
+                <td>Alice</td>
+                <td>5/5</td>
+                <td>Delicious and easy to make!</td>
+              </tr>
+              <tr>
+                <td>Pasta Alfredo</td>
+                <td>Bob</td>
+                <td>4/5</td>
+                <td>Great taste, but a bit too creamy for my liking.</td>
+              </tr>
+              <tr>
+                <td>Beef Stew</td>
+                <td>Charlie</td>
+                <td>5/5</td>
+                <td>Perfect comfort food for a cold day.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
 
-      <section>
+      <section id="submit-recipe">
+        <section class="container">
         <h2>Submit Your Recipe</h2>
         <form
           action="submit_recipe.html"
           method="post"
           enctype="multipart/form-data"
         >
-          <label for="recipe-name">Recipe Name:</label>
-          <input
+          <label for="recipe-name">Recipe Name:  
+            <input
             type="text"
             id="recipe-name"
             name="recipe-name"
             required
-          /><br /><br />
+          />
+        </label>
+         
 
-          <label for="recipe-desc">Recipe Description:</label>
-          <textarea
+          <label for="recipe-desc">Recipe Description:
+            <textarea
             id="recipe-desc"
             name="recipe-desc"
             rows="4"
             cols="50"
           ></textarea
-          ><br /><br />
+          >
+          </label>
+          
 
-          <label for="recipe-file">Upload Recipe Image:</label>
-          <input
+          <label for="recipe-file">Upload Recipe Image:
+            <input
             type="file"
             id="recipe-file"
             name="recipe-file"
             accept="image/*"
-          /><br /><br />
+          />
+          </label>
+          <input type="submit" value="Submit Recipe" />
+          </form>
             <!---->
+          </section>
       </section>
-        <figure> <a href="review.html">
+       
+     <section>
+      <section class="container">
+        <figure> 
+          <a href="review.html">
           <img src="foodImages/food2.jpg" height="200" width="300">
           <figcaption><h1>Share your sauce!</h1></figcaption>
           <p>Review this receipe now</p>
           <input type="submit">
-          </a> </figure>
-      </section>
-     <section>
-    <figure><a href="reviewed.html">
+          </a> 
+        </figure>
+        <figure>
+        <a href="reviewed.html">
 
-    <img src="foodImages/food1.jpeg" height="200" width="300"> 
-    <figcaption><h1>Share your receipes!</h1></figcaption>
-    <p>Current reviewed receipes</p>
-    <input type="submit">
-</a></figure>
-<!---->
-
-          <input type="submit" value="Submit Recipe" />
-        </form>
+          <img src="foodImages/food1.jpeg" height="200" width="300"> 
+          <figcaption><h1>Share your receipes!</h1></figcaption>
+          <p>Current reviewed receipes</p>
+          <input type="submit"></a>
+        </figure>
+  <!---->
+        </section>
       </section>
     </main>
 

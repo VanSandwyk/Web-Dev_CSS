@@ -1,1 +1,114 @@
+/************** DEFAULT CSS ACROSS ALL PAGES ************/
+/* remove default browser paddings and margins */
+* {
+  padding: 0;
+  margin: 0;
+}
 
+/* container to wrap max width on all content */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* header section of every page */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(5rem, 30%, 13rem);
+  background-color: aqua;
+}
+
+/* section headers */
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 1rem;
+  width: 100%;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+input,
+textarea {
+  width: 70%;
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  padding: 0.5rem 2rem;
+}
+
+textarea {
+  resize: none;
+  min-height: 10rem;
+}
+
+#frequency {
+  padding: 0.5rem 2rem;
+}
+
+/* footer */
+footer p {
+  display: inline-block;
+}
+footer .container {
+  padding: 2rem;
+}
+address {
+  float: right;
+}
+
+/* forms across all pages */
+#login-sn .container,
+#contact-sn .container,
+#signup-sn .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/************** HOME PAGE ************/
+/* features section on home page */
+#features article {
+  padding: 0;
+  column-count: 3;
+}
+
+#features hgroup {
+  text-align: center;
+  background-color: yellow;
+  padding: 2rem;
+  border-radius: 5px;
+  min-height: 8rem;
+}
+
+/* newsletter section */
+#newsletter .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newsletter {
+  width: 100%;
+}
+
+/* ABOUT PAGE */
+#team article {
+  column-count: 2;
+  width: 55%;
+}

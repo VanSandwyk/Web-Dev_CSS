@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register | Recipes</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -33,39 +34,38 @@
     </header>
 
     <main>
-      <section>
-        <h2>Register</h2>
-        <form action="register_user.html" method="post">
-          <label for="new-username">Username:</label>
-          <input
-            type="text"
-            id="new-username"
-            name="username"
-            required
-          /><br /><br />
+      <section id="signup-sn">
+        <section class="container">
+          <h2>Register</h2>
+          <form action="register_user.html" method="post">
+            <label for="new-username"
+              >Username:
+              <input type="text" id="new-username" name="username" required
+            /></label>
 
-          <label for="new-password">Password:</label>
-          <input
-            type="password"
-            id="new-password"
-            name="password"
-            required
-          /><br /><br />
+            <label for="new-password"
+              >Password:
+              <input type="password" id="new-password" name="password" required
+            /></label>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
+            <label for="email"
+              >Email: <input type="email" id="email" name="email" required
+            /></label>
 
-          <input type="submit" value="Register" />
-        </form>
+            <input type="submit" value="Register" />
+          </form>
+        </section>
       </section>
     </main>
 
     <footer>
-      <p>&copy; The OG's 2024. All rights reserved.</p>
-      <address role="contentinfo">
-        Email: <a href="mailto:recipe@gmail.com">recipe@gmail.com</a><br />
-        Phone: <a href="tel:+27451234567">+27 45 123 4567</a>
-      </address>
+      <section class="container">
+        <p>&copy; The OG's 2024. All rights reserved.</p>
+        <address role="contentinfo">
+          Email: <a href="mailto:recipe@gmail.com">recipe@gmail.com</a><br />
+          Phone: <a href="tel:+27451234567">+27 45 123 4567</a>
+        </address>
+      </section>
     </footer>
   </body>
 </html>
