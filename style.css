@@ -1,9 +1,30 @@
 /************** DEFAULT CSS ACROSS ALL PAGES ************/
 /* remove default browser paddings and margins */
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('font/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('font/Roboto-Bold.ttf');
+}
+
+
 * {
   padding: 0;
   margin: 0;
 }
+
+h1 {
+  font-family: Roboto-Bold;
+  font-weight: bold;
+}
+
+h2, h3, a, p, textarea, input, label {
+  font-family: Roboto-Regular;
+}
+
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /* Begin Navbar */
@@ -255,12 +276,13 @@ main {
 }
 
 /* header section of every page */
+/*---------------------------------------------------------------------------------------------------*/
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: clamp(8rem, 30%, 13rem) 1rem; /* the vertical padding must 30% of parent but >= 8rem and <= 13rem */
+  padding: clamp(8rem, 30%, 15rem) 1rem; /* the vertical padding must 30% of parent but >= 8rem and <= 13rem */
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     /* bottom, image */ url("img/avocado-bg.jpg");
   background-size: cover;
@@ -281,19 +303,28 @@ header p {
   box-sizing: border-box;
   padding: 1.5rem 4rem;
   color: black;
-  background-color: #dfdc1a;
+  background-color: #dfcb1a;
   margin-top: 1rem;
   border-radius: 50px;
+  font-weight: bold;
+}
+
+#explore-btn:hover {
+  background-color: #a3a114;
+  transition: all 500ms ease-in;
 }
 header span {
   color: #f0c050;
 }
 
+/* end of header section*/
 /*--------------------------------------------------------------------------------------------------------------*/
-/* section headers */
+/* section headings */
 section h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* form elements */
@@ -305,6 +336,7 @@ form {
   width: 100%;
   border: 1px solid #eac879;
   border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
 label {
@@ -377,7 +409,15 @@ address {
   background-color: #f0c050;
   padding: 2rem;
   border-radius: 5px;
-  min-height: 8rem;
+  min-height: 10rem;
+}
+
+#features hgroup h3 {
+  margin-bottom: 1rem;
+}
+
+#features hgroup p {
+  color:rgb(32, 29, 22);
 }
 #latest-recipes {
   background: rgb(245, 244, 238);
@@ -415,6 +455,7 @@ address {
   font-size: 2rem;
   text-align: center;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 li:nth-child(1) .explore-link {
@@ -469,6 +510,12 @@ li:nth-child(3) .explore-link:hover {
   display: flex;
   justify-content: space-between;
 }
+
+#intro h1{
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
 #team article img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -477,9 +524,14 @@ li:nth-child(3) .explore-link:hover {
 
 #team hgroup {
   text-align: center;
+  margin: 1rem;
 }
 #team article {
   max-width: 20rem;
+  text-align: center;
+  background-color: #e6e5b5;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 /* media queries for forms */
