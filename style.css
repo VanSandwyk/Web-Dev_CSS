@@ -250,6 +250,9 @@
   margin: 0 auto;
   padding: 3rem 1rem;
 }
+main {
+  background-color: #ebebdc;
+}
 
 /* header section of every page */
 header {
