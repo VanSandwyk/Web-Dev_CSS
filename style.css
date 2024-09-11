@@ -166,6 +166,87 @@
 }
 /*end Sidebar*/
 /*--------------------------------------------------------------------------------------------------------------*/
+/* Begin Responsive Design for sidebar*/
+@media (max-width: 992px) {
+  /* Adjust sidebar width for medium screens */
+  .sidebar {
+    width: 200px;
+  }
+  
+  /* Adjust button position for medium screens */
+  .toggle-button {
+    left: 5px; /* Adjust as needed */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further adjust sidebar width for smaller screens */
+  .sidebar {
+    width: 150px;
+  }
+  
+  /* Adjust button position for smaller screens */
+  .toggle-button {
+    left: 0; /* Move button closer to the screen edge */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust sidebar width for very small screens */
+  .sidebar {
+    width: 120px;
+  }
+  
+  /* Adjust button position for very small screens */
+  .toggle-button {
+    left: 0; /* Ensure button is always visible */
+  }
+}
+/* End Responsive Design for sidebar*/
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*Start Social buttons*/
+.social-buttons{
+  margin-top: 10px; 
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.social-button {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: cover; /* Cover background with icons */
+  border-radius: 50%; /* Make buttons circular */
+  transition: transform 0.3s, opacity 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.social-button:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Specific Social Icons */
+.social-button.instagram {
+  background-image: url('img/instagram.png'); /* Replace with your icon paths */
+}
+
+.social-button.facebook {
+  background-image: url('img/facebook.png');
+}
+
+.social-button.youtube {
+  background-image: url('img/youtube.png');
+}
+
+.social-button.github {
+  background-image: url('img/github.png');
+}
+
+
+
+
 
 /* container to wrap max width on all content */
 .container {
@@ -239,9 +320,18 @@ textarea {
 footer p {
   display: inline-block;
 }
-footer .container {
-  padding: 2rem;
+
+footer p, footer address, .social-buttons {
+  margin: 5px 0; 
 }
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem; /* Adjust padding as needed */
+}
+
 address {
   float: right;
 }
