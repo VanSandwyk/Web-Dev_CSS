@@ -379,11 +379,15 @@ address {
   border-radius: 5px;
   min-height: 8rem;
 }
+#latest-recipes {
+  background: rgb(245, 244, 238);
+}
 
 #latest-recipes p {
   text-align: center;
 }
-
+#explore-sn {
+}
 #explore-sn .container {
   display: flex;
   flex-direction: column;
