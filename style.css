@@ -14,11 +14,11 @@
   align-items: center; /* Centers items vertically within the navbar */
   background-color: rgba(51, 51, 51, 0.3); /* Transparent background */
   position: fixed; /* Fix the navbar at the top */
-  top: 0; 
+  top: 0;
   right: 0;
-  z-index: 1000; 
-  padding: 10px 20px; 
-  box-sizing: border-box; 
+  z-index: 1000;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 /* List styling */
@@ -53,7 +53,7 @@
   left: 0;
   right: 0;
   bottom: -5px; /* Position underline further from the text */
-  height: 3px; 
+  height: 3px;
   background-color: transparent; /* Start with no color */
   transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
   transform: scaleX(0); /* Start with the underline not visible */
@@ -78,7 +78,7 @@
   .navbar {
     padding: 10px; /* Adjust padding for smaller screens */
   }
-  
+
   .nav-list {
     gap: 10px; /* Reduce space between items */
   }
@@ -94,7 +94,8 @@
 /*--------------------------------------------------------------------------------------------------------------*/
 /*Begin Sidebar*/
 
-.toggle-checkbox{ /*start by hiding the checkbox*/
+.toggle-checkbox {
+  /*start by hiding the checkbox*/
   display: none;
 }
 
@@ -125,38 +126,33 @@
   display: block;
 }
 
-.main-content{
-  margin-left: 10px; /* Give some space from the left */
-  padding: 20px;
-}
-
 /* Toggle button styling */
 .toggle-button {
   position: fixed;
   top: 50%; /* Move to the middle of the screen */
-  left: 15px; 
+  left: 15px;
   font-size: 18px; /* Smaller font size for the arrow */
   background: #333;
   color: white;
-  padding: 8px; 
+  padding: 8px;
   cursor: pointer;
   transition: left 0.3s ease; /* Smooth transition */
   z-index: 10; /* Ensure the button is on top */
-  width: 30px; 
-  height: 30px; 
+  width: 30px;
+  height: 30px;
   border-radius: 50%; /* Fully round  */
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: translateY(-50%); /* Center button vertically */
-  border: none; 
+  border: none;
 }
 
 /* Arrow icon instead of text */
 .toggle-button::after {
-  content: '>'; /* Arrow symbol */
-  font-size: 18px; 
+  content: ">"; /* Arrow symbol */
+  font-size: 18px;
 }
 
 /* When the checkbox is checked, move the sidebar into view */
@@ -175,7 +171,7 @@
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 
 /* header section of every page */
@@ -276,6 +272,75 @@ address {
   min-height: 8rem;
 }
 
+#latest-recipes p {
+  text-align: center;
+}
+
+#explore-sn .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#explore-sn .container p {
+  margin-bottom: 1rem;
+}
+
+#explore-sn .container ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  list-style: none;
+}
+
+.explore-link {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: max(10rem, 25%) max(7.2rem, 30%);
+  background-size: cover;
+  color: transparent;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+li:nth-child(1) .explore-link {
+  background-image: url("foodImages/food1.jpeg");
+}
+
+li:nth-child(1) .explore-link:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* bottom, image */ url("foodImages/food1.jpeg");
+  background-size: cover;
+  transition: all 500ms ease-in;
+  color: white;
+}
+
+li:nth-child(2) .explore-link {
+  background-image: url("foodImages/cheesecake.jpg");
+}
+
+li:nth-child(2) .explore-link:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* bottom, image */ url("foodImages/cheesecake.jpg");
+  background-size: cover;
+  transition: all 500ms ease-in;
+  color: white;
+}
+
+li:nth-child(3) .explore-link {
+  background-image: url("foodImages/italian.jpg");
+}
+
+li:nth-child(3) .explore-link:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* bottom, image */ url("foodImages/italian.jpg");
+  background-size: cover;
+  transition: all 500ms ease-in;
+  color: white;
+}
+
 /* newsletter section */
 #newsletter .container {
   display: flex;
@@ -327,5 +392,39 @@ address {
 
   #features hgroup {
     margin-bottom: 1rem;
+  }
+
+  #explore-sn .container ul {
+    display: block;
+  }
+
+  .explore-link {
+    width: 100%;
+    padding: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  li:nth-child(1) .explore-link {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* bottom, image */ url("foodImages/food1.jpeg");
+    background-size: cover;
+    transition: all 500ms ease-in;
+    color: white;
+  }
+
+  li:nth-child(2) .explore-link {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* bottom, image */ url("foodImages/cheesecake.jpg");
+    background-size: cover;
+    transition: all 500ms ease-in;
+    color: white;
+  }
+
+  li:nth-child(3) .explore-link {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* bottom, image */ url("foodImages/italian.jpg");
+    background-size: cover;
+    transition: all 500ms ease-in;
+    color: white;
   }
 }
