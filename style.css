@@ -172,7 +172,7 @@
   .sidebar {
     width: 200px;
   }
-  
+
   /* Adjust button position for medium screens */
   .toggle-button {
     left: 5px; /* Adjust as needed */
@@ -184,7 +184,7 @@
   .sidebar {
     width: 150px;
   }
-  
+
   /* Adjust button position for smaller screens */
   .toggle-button {
     left: 0; /* Move button closer to the screen edge */
@@ -196,7 +196,7 @@
   .sidebar {
     width: 120px;
   }
-  
+
   /* Adjust button position for very small screens */
   .toggle-button {
     left: 0; /* Ensure button is always visible */
@@ -206,10 +206,10 @@
 /*--------------------------------------------------------------------------------------------------------------*/
 
 /*Start Social buttons*/
-.social-buttons{
-  margin-top: 10px; 
-    display: flex;
-    gap: 10px; /* Space between buttons */
+.social-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px; /* Space between buttons */
 }
 
 .social-button {
@@ -229,24 +229,20 @@
 
 /* Specific Social Icons */
 .social-button.instagram {
-  background-image: url('img/instagram.png'); /* Replace with your icon paths */
+  background-image: url("img/instagram.png"); /* Replace with your icon paths */
 }
 
 .social-button.facebook {
-  background-image: url('img/facebook.png');
+  background-image: url("img/facebook.png");
 }
 
 .social-button.youtube {
-  background-image: url('img/youtube.png');
+  background-image: url("img/youtube.png");
 }
 
 .social-button.github {
-  background-image: url('img/github.png');
+  background-image: url("img/github.png");
 }
-
-
-
-
 
 /* container to wrap max width on all content */
 .container {
@@ -261,7 +257,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: clamp(8rem, 30%, 18rem) 1rem;
+  padding: clamp(8rem, 30%, 13rem) 1rem; /* the vertical padding must 30% of parent but >= 8rem and <= 13rem */
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     /* bottom, image */ url("img/avocado-bg.jpg");
   background-size: cover;
@@ -269,6 +265,23 @@ header {
   color: white;
 }
 
+header h1 {
+  font-size: 5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+#explore-btn {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 1.5rem 4rem;
+  color: black;
+  background-color: #dfdc1a;
+  margin-top: 1rem;
+  border-radius: 50px;
+}
 header span {
   color: #f0c050;
 }
@@ -321,15 +334,17 @@ footer p {
   display: inline-block;
 }
 
-footer p, footer address, .social-buttons {
-  margin: 5px 0; 
+footer p,
+footer address,
+.social-buttons {
+  margin: 5px 0;
 }
 
 footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem; /* Adjust padding as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem; /* Adjust padding as needed */
 }
 
 address {
