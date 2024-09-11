@@ -5,7 +5,8 @@
   margin: 0;
 }
 
-/* Navigation bar on all pages */
+/*--------------------------------------------------------------------------------------------------------------*/
+/* Begin Navbar */
 .navbar {
   width: 100%;
   display: flex;
@@ -13,10 +14,11 @@
   align-items: center; /* Centers items vertically within the navbar */
   background-color: rgba(51, 51, 51, 0.3); /* Transparent background */
   position: fixed; /* Fix the navbar at the top */
-  top: 0; /* Align to the top */
-  right: 0; /* Align to the right */
-  z-index: 1000; /* Ensure it stays above other elements */
-  padding: 10px 20px; /* Add padding for a cleaner look */
+  top: 0; 
+  right: 0;
+  z-index: 1000; 
+  padding: 10px 20px; 
+  box-sizing: border-box; 
 }
 
 /* List styling */
@@ -51,7 +53,7 @@
   left: 0;
   right: 0;
   bottom: -5px; /* Position underline further from the text */
-  height: 3px; /* Height of the underline effect */
+  height: 3px; 
   background-color: transparent; /* Start with no color */
   transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
   transform: scaleX(0); /* Start with the underline not visible */
@@ -62,8 +64,112 @@
   background-color: #f0c050; /* Use a color similar to the underline in the image */
   transform: scaleX(1); /* Expand underline on hover */
 }
-
 /*End of navbar*/
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/* begin Responsive Design for navbar*/
+@media (max-width: 992px) {
+  .nav-link {
+    font-size: 14px; /* Slightly smaller text on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .nav-list {
+    gap: 10px; /* Reduce space between items */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 12px; /* Even smaller text on very small screens */
+    padding: 8px 0;
+  }
+}
+/*end responsive design for navbar*/
+/*--------------------------------------------------------------------------------------------------------------*/
+/*Begin Sidebar*/
+
+.toggle-checkbox{ /*start by hiding the checkbox*/
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50%; /* Move to the middle of the screen */
+  left: -300px;
+  transform: translateY(-50%); /* Center vertically */
+  width: 250px;
+  height: auto; /* Adjust height based on content */
+  background-color: #333;
+  padding: 20px;
+  transition: left 0.3s ease;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.main-content{
+  margin-left: 10px; /* Give some space from the left */
+  padding: 20px;
+}
+
+/* Toggle button styling */
+.toggle-button {
+  position: fixed;
+  top: 50%; /* Move to the middle of the screen */
+  left: 15px; 
+  font-size: 18px; /* Smaller font size for the arrow */
+  background: #333;
+  color: white;
+  padding: 8px; 
+  cursor: pointer;
+  transition: left 0.3s ease; /* Smooth transition */
+  z-index: 10; /* Ensure the button is on top */
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; /* Fully round  */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%); /* Center button vertically */
+  border: none; 
+}
+
+/* Arrow icon instead of text */
+.toggle-button::after {
+  content: '>'; /* Arrow symbol */
+  font-size: 18px; 
+}
+
+/* When the checkbox is checked, move the sidebar into view */
+.toggle-checkbox:checked + .toggle-button + .sidebar {
+  left: 0;
+}
+
+/* When sidebar is shown, shift toggle button */
+.toggle-checkbox:checked + .toggle-button {
+  left: 265px; /* Adjust based on sidebar width */
+}
+/*end Sidebar*/
+/*--------------------------------------------------------------------------------------------------------------*/
 
 /* container to wrap max width on all content */
 .container {
@@ -89,6 +195,7 @@ header span {
   color: #f0c050;
 }
 
+/*--------------------------------------------------------------------------------------------------------------*/
 /* section headers */
 section h2 {
   text-align: center;
