@@ -4,6 +4,66 @@
   padding: 0;
   margin: 0;
 }
+/* Navigation bar on all pages */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center; /* Centers items vertically within the navbar */
+  background-color: rgba(51, 51, 51, 0.3); /* Transparent background */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  z-index: 1000; /* Ensure it stays above other elements */
+  padding: 10px 20px; /* Add padding for a cleaner look */
+}
+
+/* List styling */
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav items */
+.nav-item {
+  margin: 0 20px; /* Space between the links */
+}
+
+/* Nav links */
+.nav-link {
+  text-decoration: none;
+  color: white; /* Text color */
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  padding: 10px 0; /* Padding for the links */
+  transition: color 0.3s; /* Smooth color transition */
+  letter-spacing: 1px;
+}
+
+/* Hover effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Position underline further from the text */
+  height: 3px; /* Height of the underline effect */
+  background-color: transparent; /* Start with no color */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  transform: scaleX(0); /* Start with the underline not visible */
+}
+
+/* Hover effect color change */
+.nav-link:hover::after {
+  background-color: #f0c050; /* Use a color similar to the underline in the image */
+  transform: scaleX(1); /* Expand underline on hover */
+}
+
+/*End of navbar*/
+
 
 /* container to wrap max width on all content */
 .container {
