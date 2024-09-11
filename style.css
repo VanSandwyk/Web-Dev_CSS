@@ -170,6 +170,45 @@
 }
 /*end Sidebar*/
 /*--------------------------------------------------------------------------------------------------------------*/
+/* Begin Responsive Design for sidebar*/
+@media (max-width: 992px) {
+  /* Adjust sidebar width for medium screens */
+  .sidebar {
+    width: 200px;
+  }
+  
+  /* Adjust button position for medium screens */
+  .toggle-button {
+    left: 5px; /* Adjust as needed */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further adjust sidebar width for smaller screens */
+  .sidebar {
+    width: 150px;
+  }
+  
+  /* Adjust button position for smaller screens */
+  .toggle-button {
+    left: 0; /* Move button closer to the screen edge */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust sidebar width for very small screens */
+  .sidebar {
+    width: 120px;
+  }
+  
+  /* Adjust button position for very small screens */
+  .toggle-button {
+    left: 0; /* Ensure button is always visible */
+  }
+}
+/* End Responsive Design for sidebar*/
+/*--------------------------------------------------------------------------------------------------------------*/
+
 
 /* container to wrap max width on all content */
 .container {
