@@ -164,9 +164,20 @@ textarea {
 footer p {
   display: inline-block;
 }
-footer .container {
-  padding: 2rem;
+
+footer p,
+footer address,
+.social-buttons {
+  margin: 5px 0;
 }
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem; /* Adjust padding as needed */
+}
+
 address {
   float: right;
 }
