@@ -27,6 +27,24 @@
       </ul>
     </nav>
 
+  <!--start Sidebar-->
+<!-- Toggle checkbox (hidden) -->
+<input type="checkbox" id="toggle-sidebar" class="toggle-checkbox">
+
+<!-- Label acting as a button -->
+<label for="toggle-sidebar" class="toggle-button"></label>
+<div class="sidebar">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<!--end Sidebar-->
+
     <header>
       <h1>Contact Us</h1>
       <p>
@@ -37,8 +55,8 @@
     <main>
       <section id="contact-sn">
         <section class="container">
-          <h2>Get in Touch</h2>
           <form action="submit_contact.html" method="post">
+            <h2>Get in Touch</h2>
             <label
               >Name:
               <input type="text" id="name" name="name" required />
@@ -72,6 +90,16 @@
           Email: <a href="mailto:recipe@gmail.com">recipe@gmail.com</a><br />
           Phone: <a href="tel:+27451234567">+27 45 123 4567</a>
         </address>
+        <!--Begin social buttons-->
+
+        <!--TODO replace links with relevant locations-->
+        <div class="social-buttons">
+          <a href="https://www.instagram.com" class="social-button instagram" aria-label="Instagram" target="_blank"></a>
+          <a href="https://www.facebook.com" class="social-button facebook" aria-label="Facebook" target="_blank"></a>
+          <a href="https://www.youtube.com" class="social-button youtube" aria-label="YouTube" target="_blank"></a>
+          <a href="https://www.github.com" class="social-button github" aria-label="GitHub" target="_blank"></a>
+        </div>
+        <!--End social buttons-->
       </section>
     </footer>
   </body>
