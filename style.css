@@ -1,4 +1,16 @@
 /************** DEFAULT CSS ACROSS ALL PAGES ************/
+
+/* use fonts */
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('font/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('font/Roboto-Bold.ttf');
+}
+
 /* remove default browser paddings and margins */
 * {
   padding: 0;
@@ -89,13 +101,17 @@ header span {
   color: #f0c050;
 }
 
-/* section headers */
+/* end of header section*/
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/* section headings */
 section h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
 
 /* form elements */
+/*--------------------------------------------------------------------------------------------------------------*/
 form {
   display: flex;
   flex-direction: column;
@@ -129,7 +145,22 @@ textarea {
   padding: 0.5rem 2rem;
 }
 
+/* forms across all pages */
+#login-sn .container,
+#contact-sn .container,
+#signup-sn .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end form style */
+/*--------------------------------------------------------------------------------------------------------------*/
+
 /* footer */
+/*--------------------------------------------------------------------------------------------------------------*/
+
 footer p {
   display: inline-block;
 }
@@ -140,16 +171,11 @@ address {
   float: right;
 }
 
-/* forms across all pages */
-#login-sn .container,
-#contact-sn .container,
-#signup-sn .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* end footer */
+/*--------------------------------------------------------------------------------------------------------------*/
 
-/************** HOME PAGE ************/
+
+/********************************* HOME PAGE ********************************/
 /* features section on home page */
 #features article {
   padding: 0;
@@ -161,7 +187,94 @@ address {
   background-color: #f0c050;
   padding: 2rem;
   border-radius: 5px;
-  min-height: 8rem;
+  min-height: 10rem;
+}
+
+#features hgroup h3 {
+  margin-bottom: 1rem;
+}
+
+#features hgroup p {
+  color:rgb(32, 29, 22);
+}
+
+/* latest recipes section on home page */
+#latest-recipes {
+  background: rgb(245, 244, 238);
+}
+
+#latest-recipes p {
+  text-align: center;
+}
+
+/* explore recipes section on home page */
+#explore-sn {
+}
+#explore-sn .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#explore-sn .container p {
+  margin-bottom: 1rem;
+}
+
+#explore-sn .container ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* explore section image links */
+.explore-link {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: max(10rem, 25%) max(7.2rem, 30%);
+  background-size: cover;
+  color: transparent;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+li:nth-child(1) .explore-link {
+  background-image: url("foodImages/food1.jpeg");
+}
+
+li:nth-child(1) .explore-link:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* bottom, image */ url("foodImages/food1.jpeg");
+  background-size: cover;
+  transition: all 500ms ease-in;
+  color: white;
+}
+
+li:nth-child(2) .explore-link {
+  background-image: url("foodImages/cheesecake.jpg");
+}
+
+li:nth-child(2) .explore-link:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* bottom, image */ url("foodImages/cheesecake.jpg");
+  background-size: cover;
+  transition: all 500ms ease-in;
+  color: white;
+}
+
+li:nth-child(3) .explore-link {
+  background-image: url("foodImages/italian.jpg");
+}
+
+li:nth-child(3) .explore-link:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* bottom, image */ url("foodImages/italian.jpg");
+  background-size: cover;
+  transition: all 500ms ease-in;
+  color: white;
 }
 
 /* newsletter section */
@@ -175,8 +288,92 @@ address {
   width: 100%;
 }
 
-/* ABOUT PAGE */
+/********************** ABOUT PAGE ****************************/
+#team .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#intro h1{
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+#team article img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+#team hgroup {
+  text-align: center;
+  margin: 1rem;
+}
 #team article {
-  column-count: 2;
-  width: 55%;
+  max-width: 20rem;
+  text-align: center;
+  background-color: #e6e5b5;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  /* media queries for forms */
+  form {
+    align-items: center;
+    border: none;
+  }
+  label {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  /* media queries for features */
+  #features article {
+    column-count: 1;
+  }
+
+  #features hgroup {
+    margin-bottom: 1rem;
+  }
+
+  /* media queries for explore section */
+  #explore-sn .container ul {
+    display: block;
+  }
+
+  .explore-link {
+    width: 100%;
+    padding: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  li:nth-child(1) .explore-link {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* bottom, image */ url("foodImages/food1.jpeg");
+    background-size: cover;
+    transition: all 500ms ease-in;
+    color: white;
+  }
+
+  li:nth-child(2) .explore-link {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* bottom, image */ url("foodImages/cheesecake.jpg");
+    background-size: cover;
+    transition: all 500ms ease-in;
+    color: white;
+  }
+
+  li:nth-child(3) .explore-link {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* bottom, image */ url("foodImages/italian.jpg");
+    background-size: cover;
+    transition: all 500ms ease-in;
+    color: white;
+  }
 }
