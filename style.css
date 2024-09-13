@@ -3,12 +3,12 @@
 /* use fonts */
 @font-face {
   font-family: Roboto-Regular;
-  src: url('font/Roboto-Regular.ttf');
+  src: url("font/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: Roboto-Bold;
-  src: url('font/Roboto-Bold.ttf');
+  src: url("font/Roboto-Bold.ttf");
 }
 
 /* remove default browser paddings and margins */
@@ -22,10 +22,15 @@ h1 {
   font-weight: bold;
 }
 
-h2, h3, a, p, textarea, input, label {
+h2,
+h3,
+a,
+p,
+textarea,
+input,
+label {
   font-family: Roboto-Regular;
 }
-
 
 /*--------------------------------------------------------------------------------------------------------------*/
 /* Begin Navbar */
@@ -304,7 +309,7 @@ header p {
   text-decoration: none;
   box-sizing: border-box;
   padding: 1.5rem 4rem;
-  color: black;
+  color: rgb(32, 29, 22);
   background-color: #dfcb1a;
   margin-top: 1rem;
   border-radius: 50px;
@@ -408,7 +413,6 @@ address {
 /* end footer */
 /*--------------------------------------------------------------------------------------------------------------*/
 
-
 /********************************* HOME PAGE ********************************/
 /* features section on home page */
 #features article {
@@ -430,7 +434,7 @@ address {
 }
 
 #features hgroup p {
-  color:rgb(32, 29, 22);
+  color: rgb(32, 29, 22);
 }
 
 /* latest recipes section on home page */
@@ -529,7 +533,7 @@ li:nth-child(3) .explore-link:hover {
   justify-content: space-between;
 }
 
-#intro h1{
+#intro h1 {
   margin: 1rem 0;
   font-size: 2rem;
 }
